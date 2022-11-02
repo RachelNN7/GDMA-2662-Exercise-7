@@ -6,15 +6,13 @@
 1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
 2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+        -Universal
 4.0 - Elements: styling for bare/generic HTML elements 
         - Typography: Headings, Paragraphs, Blockquotes, Anchors
-        -table
-        -form
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
 6.0 - Components: specific designed components
-        -nav
-        -hero
+        -class
         -img
         -content
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
@@ -39,44 +37,75 @@
 }
 
 html {
+    font-size: .6rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+
+    html {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    html {
+        font-size: 1rem;
+    }
+}
 
 
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 /*------ Typography------- */
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .formation p {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .formation p {
+        font-size: 2rem;
+    }
+}
+
 h1 {
     text-align: center;
     padding: 36px 0;
-    font-size: 55px;
+    font-size: 3rem;
     margin: 0;
 }
 
 p {
-    padding: 10px;
+    padding: .9rem;
 }
 
 ul,
 p {
-    font-size: 13px;
     margin: 0;
+}
+
+.formation p {
+    font-weight: 700;
+    font-size: 4rem;
 }
 
 span {
     text-transform: uppercase;
 }
-
-.formation p {
-    font-weight: 700;
-    font-size: 40px;
-}
-
-/*------ Table------- */
-
-/*------Form------- */
 
 
 /*--------------------------------------------------------------
@@ -104,7 +133,7 @@ span {
 }
 
 [class*='col-'] {
-    padding: 5px;
+    padding: .6rem;
 }
 
 .col-sm-1 {
@@ -160,12 +189,8 @@ span {
         width:80%;
     }
 
-    h1 {
-        font-size: 65px;
-    }
-
     [class*='col-'] {
-        padding: 5px;
+        padding: .5rem;
     }
 
     .col-md-1 {
@@ -224,12 +249,8 @@ span {
         width:70%;
     }
 
-    h1 {
-        font-size: 75px;
-    }
-
     [class*='col-'] {
-        padding: 6px;
+        padding: .4rem;
     }
 
     .col-lg-1 {
@@ -281,23 +302,32 @@ span {
 }
 
 
-
-
-
-
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+/* ----- class----- */
+@media screen and (min-width: 768px) {
+    .formation p {
+        font-size: 3rem;
+    }
+}
 
-/* ----- HERO ----- */
+@media screen and (min-width: 1024px) {
 
+    h1 {
+        font-size: 6rem;
+    }
+
+    .formation p {
+        font-size: 2rem;
+    }
+}
 
 
 /* ----- Images----- */
 .row:last-child {
    justify-content: center;
 }
-
 
 #bg-hand {
     background: url(../img/hand-img.jpg) no-repeat center;
@@ -308,12 +338,6 @@ span {
     background-size: cover;
     background-clip: content-box;
 }
-
-
-/* ----- Nav ----- */
-
-
-
 
 
 /*--------------------------------------------------------------
