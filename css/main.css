@@ -37,21 +37,21 @@
 }
 
 html {
-    font-size: .6rem;
+    font-size: .8rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
 
     html {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     html {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -60,32 +60,10 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 /*------ Typography------- */
-@media screen and (min-width: 768px) {
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    .formation p {
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    h1 {
-        font-size: 6rem;
-    }
-
-    .formation p {
-        font-size: 2rem;
-    }
-}
-
 h1 {
     text-align: center;
     padding: 36px 0;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
 }
 
@@ -98,13 +76,22 @@ p {
     margin: 0;
 }
 
-.formation p {
-    font-weight: 700;
-    font-size: 4rem;
-}
-
 span {
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: 4rem;
+    }
 }
 
 
@@ -306,6 +293,11 @@ span {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 /* ----- class----- */
+.formation p {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
 @media screen and (min-width: 768px) {
     .formation p {
         font-size: 3rem;
@@ -313,11 +305,6 @@ span {
 }
 
 @media screen and (min-width: 1024px) {
-
-    h1 {
-        font-size: 6rem;
-    }
-
     .formation p {
         font-size: 2rem;
     }
@@ -330,7 +317,7 @@ span {
 }
 
 #bg-hand {
-    background: url(../img/hand-img.jpg) no-repeat center;
+    background: url(../img/hand-ring.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
